@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <head>
-
+    <meta charset="UTF-8">
 </head>
 <body>
 <form>
 <!--Esta es la parte de Julian<!--> 
 
     <label for='id_usuario'>ID Usuario</label><br>
-    comprobar que sea un numero con js
-    <input type='text' id='id_usuario' maxlength="11"><br>
+    <input type='text' id='id_usuario' maxlength="11" onkeydown="this.value=this.value.replace(/[^\d]/,'')"><br>
     <label for='slct_pais'>Seleccione su Pais</label><br>
     <select id='slct_pais' name='slct_pais'>
         <option value='-Seleccionar-'>-Seleccionar-</option>
@@ -238,16 +237,11 @@
 <!--Esta es la parte de Valentina<!--> 
 
 <!--Esta es la parte de Eduardo<!--> 
-    <label for="ccpaswd">Contrasena</label><br>
+    <label for="ccpaswd">Contraseña</label><br>
     <input type="password" id="ccpaswd" name="ccpaswd"><br>
     <label for="email">Correo electronico</label><br>
     <input type="email" id="email" name="email" maxlength="120"><br>
     <label for="phone">Telefono</label><br>
-	<input type="number" id="phone" name="phone" maxlength="20">
-	
-	
-	
-	
-	
+	<input type="number" id="phone" name="phone" maxlength="20">	
 </form>
 </body>
