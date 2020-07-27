@@ -78,12 +78,25 @@
         display: table-cell;
         vertical-align: middle;
         }
+        .boton{
+            background-color:rgb(138, 140, 143, 0.4);
+            border: None;
+            color:white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: None;
+            display: inline-block;
+            font-size: 16px;
+        }
+        .boton:hover{
+            background-color: rgba(70, 80, 85, 0.4);
+        }
     </style>
 </head>
 <body>
 <div class='bg-image'></div>
 <div class = 'bg-text'>
-<form>
+<form  action='Integrantes.html' method=post>
 <!--Esta es la parte de Julian<!--> 
         <div style='display: inline-block; text-align: left;'>
             <label for='id_usuario'>ID Usuario</label><br>
@@ -328,7 +341,9 @@
             <label for="email">Correo electronico</label><br>
             <input type="email" id="email" name="email" maxlength="120" size="45"><br>
             <label for="phone">Telefono</label><br>
-            <input type="tel" id="phone" name="phone" maxlength="20">	
+            <input type="tel" id="phone" name="phone" maxlength="20"><br>
+            <br>
+            <input type="submit" id='enviar' class='boton' value='Enviar Datos' onclick="enviar()">	
         </div>
     
 </form>
